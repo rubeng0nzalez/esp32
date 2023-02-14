@@ -5,7 +5,7 @@
 
 void app_main(void)
 {
-    printf("This is a simple GPIO example!\n");
+    printf("This is a simple GPIO example!\n  ");
 	gpio_set_direction(GPIO_NUM_2, GPIO_MODE_OUTPUT);
     int value = 0;
     gpio_set_level(GPIO_NUM_2, 0);
