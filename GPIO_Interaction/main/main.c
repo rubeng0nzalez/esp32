@@ -11,7 +11,7 @@
  *
  * */
 
-#define ESP_LED_PIN	GPIO_NUM_2
+#define ESP_LED_PIN GPIO_NUM_2
 
 void app_main(void)
 {
@@ -27,7 +27,7 @@ void app_main(void)
     	}
     	else
     	{
-    		gpio_set_level(GPIO_NUM_2, 0);
+    		gpio_set_level(ESP_LED_PIN, 0);
     		value = 0;
     	}
         sleep(1);
