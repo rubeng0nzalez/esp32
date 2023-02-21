@@ -2,6 +2,8 @@
 #include <stdbool.h>
 #include <unistd.h>
 #include "driver/gpio.h"
+#include "freertos/freeRTOS.h"
+#include "freertos/task.h"
 
 /*Good practice: Define before with a name the pins you will use and its purpose
  *
@@ -30,6 +32,6 @@ void app_main(void)
     		gpio_set_level(ESP_LED_PIN, 0);
     		value = 0;
     	}
-        sleep(1);
+        vTaskDelay(1);
     }
 }

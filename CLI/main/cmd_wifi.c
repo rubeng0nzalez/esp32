@@ -11,7 +11,7 @@
 #include "esp_event.h"
 #include "cmd_wifi.h"
 
-#define JOIN_TIMEOUT_MS (10000)
+#define JOIN_TIMEOUT_MS (10000) //Set the timeout
 
 static EventGroupHandle_t wifi_event_group;
 const int CONNECTED_BIT = BIT0;
