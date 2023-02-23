@@ -19,21 +19,21 @@ void app_main(void)
         gpio_set_level(GPIO_NUM_18, 0);
         gpio_set_level(GPIO_NUM_5, 0);
         gpio_set_level(GPIO_NUM_17, 0);
-        vTaskDelay(5);
+        vTaskDelay(15);
         gpio_set_level(GPIO_NUM_19, 0);
         gpio_set_level(GPIO_NUM_18, 1);
         gpio_set_level(GPIO_NUM_5, 0);
         gpio_set_level(GPIO_NUM_17, 0);
-        vTaskDelay(5);
+        vTaskDelay(15);
         gpio_set_level(GPIO_NUM_19, 0);
         gpio_set_level(GPIO_NUM_18, 0);
         gpio_set_level(GPIO_NUM_5, 1);
         gpio_set_level(GPIO_NUM_17, 0);
-        vTaskDelay(5);
+        vTaskDelay(15);
         gpio_set_level(GPIO_NUM_19, 0);
         gpio_set_level(GPIO_NUM_18, 0);
         gpio_set_level(GPIO_NUM_5, 0);
         gpio_set_level(GPIO_NUM_17, 1);
-        vTaskDelay(5);
+        vTaskDelay(15);
     }
 }
