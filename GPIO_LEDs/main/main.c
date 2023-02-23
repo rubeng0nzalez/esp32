@@ -16,10 +16,10 @@ void app_main(void)
 
 	while (true) {
         for(int i = 1; i <= 4; i++){
-			gpio_set_level(GPIO_NUM_19, (i / 1));
-			gpio_set_level(GPIO_NUM_18, (i / 2));
-			gpio_set_level(GPIO_NUM_5, (i / 3));
-			gpio_set_level(GPIO_NUM_17, (i / 4));
+			gpio_set_level(GPIO_NUM_19, (i / 4));
+			gpio_set_level(GPIO_NUM_18, (i / 3));
+			gpio_set_level(GPIO_NUM_5, (i / 2));
+			gpio_set_level(GPIO_NUM_17, (i / 1));
 			vTaskDelay(50);
         }
     }
