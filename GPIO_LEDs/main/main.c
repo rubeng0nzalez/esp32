@@ -18,13 +18,12 @@ void app_main(void)
 	while (true) {
 
 		for(int i = (1 + init); i <= 4; i++){
-
 			if(init == 1 && i == 2)
-				vTaskDelay(25);
+				vTaskDelay(10); //HALF OF TIME CONSIDERING THE BOTTOM FOR WILL HOLD HALF OF THE TIME TOO
 			else
-				vTaskDelay(50);
+				vTaskDelay(20);
 
-			gpio_set_level(GPIO_NUM_19, (i == 1));
+			gpio_set_level(GPIO_NUM_19, (i == 1)); //ONLY ASSIGN 1 THE FIRST ROUND, THE CONSECUTIVE ROUND WILL BE 0
 
 			gpio_set_level(GPIO_NUM_18, (i == 2));
 			gpio_set_level(GPIO_NUM_5,  (i == 3));
@@ -39,9 +38,9 @@ void app_main(void)
 			gpio_set_level(GPIO_NUM_17, (i == 1));
 
 			if(i == 4)
-				vTaskDelay(25);
+				vTaskDelay(10);
 			else
-				vTaskDelay(50);
+				vTaskDelay(20);
         }
 	}
 }
