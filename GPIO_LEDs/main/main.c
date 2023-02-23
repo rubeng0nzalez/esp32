@@ -15,25 +15,12 @@ void app_main(void)
     printf("GPIO LEDs\n");
 
 	while (true) {
-        gpio_set_level(GPIO_NUM_19, 1);
-        gpio_set_level(GPIO_NUM_18, 0);
-        gpio_set_level(GPIO_NUM_5, 0);
-        gpio_set_level(GPIO_NUM_17, 0);
-        vTaskDelay(15);
-        gpio_set_level(GPIO_NUM_19, 0);
-        gpio_set_level(GPIO_NUM_18, 1);
-        gpio_set_level(GPIO_NUM_5, 0);
-        gpio_set_level(GPIO_NUM_17, 0);
-        vTaskDelay(15);
-        gpio_set_level(GPIO_NUM_19, 0);
-        gpio_set_level(GPIO_NUM_18, 0);
-        gpio_set_level(GPIO_NUM_5, 1);
-        gpio_set_level(GPIO_NUM_17, 0);
-        vTaskDelay(15);
-        gpio_set_level(GPIO_NUM_19, 0);
-        gpio_set_level(GPIO_NUM_18, 0);
-        gpio_set_level(GPIO_NUM_5, 0);
-        gpio_set_level(GPIO_NUM_17, 1);
-        vTaskDelay(15);
+        for(int i = 1; i <= 4; i++){
+			gpio_set_level(GPIO_NUM_19, (i / 1));
+			gpio_set_level(GPIO_NUM_18, (i / 2));
+			gpio_set_level(GPIO_NUM_5, (i / 3));
+			gpio_set_level(GPIO_NUM_17, (i / 4));
+			vTaskDelay(50);
+        }
     }
 }
