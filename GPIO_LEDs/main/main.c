@@ -5,6 +5,8 @@
 #include "freertos/freeRTOS.h"
 #include "freertos/task.h"
 
+#define ESP_INTERNAL_LED GPIO_NUM_2
+
 void app_main(void)
 {
     gpio_set_direction(GPIO_NUM_19, GPIO_MODE_OUTPUT);
@@ -16,6 +18,8 @@ void app_main(void)
     printf("GPIO LEDs\n");
 
 	while (true) {
+
+		gpio_set_level(ESP_INTERNAL_LED, 1);
 
 		for(int i = (1 + init); i <= 4; i++){
 			if(init == 1 && i == 2)
@@ -30,7 +34,7 @@ void app_main(void)
 			gpio_set_level(GPIO_NUM_17, (i == 4));
 			init = 1;
         }
-
+		gpio_set_level(ESP_INTERNAL_LED, 0);
         for(int i = 1; i <= 4; i++){
         	gpio_set_level(GPIO_NUM_19, (i == 4));
 			gpio_set_level(GPIO_NUM_18, (i == 3));
