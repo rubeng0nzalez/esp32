@@ -6,6 +6,7 @@ void app_main(void)
 {
     while (true) {
         printf("Hello World from ESP32!\n");
+        pritnf("This is just for testing purposes\n")
         sleep(1);
     }
 }
