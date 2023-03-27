@@ -5,15 +5,15 @@ cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
   "/home/kalkini/esp/esp-idf/components/bootloader/subproject"
-  "/home/kalkini/eclipse-workspace-idf/hello_world/build/bootloader"
-  "/home/kalkini/eclipse-workspace-idf/hello_world/build/bootloader-prefix"
-  "/home/kalkini/eclipse-workspace-idf/hello_world/build/bootloader-prefix/tmp"
-  "/home/kalkini/eclipse-workspace-idf/hello_world/build/bootloader-prefix/src/bootloader-stamp"
-  "/home/kalkini/eclipse-workspace-idf/hello_world/build/bootloader-prefix/src"
-  "/home/kalkini/eclipse-workspace-idf/hello_world/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/kalkini/workspace/esp32/hello_world/build/bootloader"
+  "/home/kalkini/workspace/esp32/hello_world/build/bootloader-prefix"
+  "/home/kalkini/workspace/esp32/hello_world/build/bootloader-prefix/tmp"
+  "/home/kalkini/workspace/esp32/hello_world/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/kalkini/workspace/esp32/hello_world/build/bootloader-prefix/src"
+  "/home/kalkini/workspace/esp32/hello_world/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/kalkini/eclipse-workspace-idf/hello_world/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/kalkini/workspace/esp32/hello_world/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()

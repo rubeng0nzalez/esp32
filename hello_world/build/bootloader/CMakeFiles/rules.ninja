@@ -299,7 +299,7 @@ rule C_STATIC_LIBRARY_LINKER____idf_main_
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = /home/kalkini/.espressif/tools/cmake/3.23.1/bin/cmake --regenerate-during-build -S/home/kalkini/esp/esp-idf/components/bootloader/subproject -B/home/kalkini/eclipse-workspace-idf/hello_world/build/bootloader
+  command = /home/kalkini/.espressif/tools/cmake/3.23.1/bin/cmake --regenerate-during-build -S/home/kalkini/esp/esp-idf/components/bootloader/subproject -B/home/kalkini/workspace/esp32/hello_world/build/bootloader
   description = Re-running CMake...
   generator = 1
 

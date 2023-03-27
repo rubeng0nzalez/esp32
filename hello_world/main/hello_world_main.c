@@ -5,6 +5,8 @@
 #include "esp_system.h"
 #include "esp_spi_flash.h"
 
+/*Basic example of ESP32*/
+
 void app_main(void)
 {
     printf("Hello world!\n");
